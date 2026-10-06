@@ -1,0 +1,13 @@
+{
+    "name": "aluno/lab-agua",
+    "description": "Simulação de laboratório de teste de qualidade da água",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0"
+    }
+}
