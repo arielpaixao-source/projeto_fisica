@@ -1,0 +1,8 @@
+Code Coverage Report:
+  Classes: 100.00% (2/2)
+  Methods: 100.00% (6/6)
+  Lines:   100.00% (28/28)
+
+Summary:
+  App\AmostraAgua ......... 100.00%
+  App\Biofiltro ........... 100.00%
