@@ -1,26 +1,57 @@
-Integrantes do Projeto
-Nome: Ariel França e Laura Pereira
+# Projeto Laboratório Digital para Análise da Qualidade da Água
 
-1. Visao Geral do Projeto
-O sistema lab-agua e uma aplicacao web desenvolvida em PHP para simulacao e avaliacao de parametros de qualidade da agua, eficiencia de sistemas de biofiltragem e resolucao de balanco de massa via sistemas lineares.
+## Integrantes do Projeto
 
-2. Funcionalidades Implementadas
-Analise de Amostras: Validacao de parametros de pH, turbidez e cloro residual com classificacao de potabilidade.
+**Nome:** Ariel França e Laura Pereira
 
-Modelagem de Biofiltro: Calculo de eficiencia de remocao de contaminantes e taxa de filtracao.
+## 1. Visão Geral do Projeto
 
-Resolucao de Sistemas Lineares: Resolucao de matrizes para calculo de concentracao final e dosagem em multiplos tanques.
+O sistema **Lab-Água** é uma aplicação web desenvolvida em PHP para simulação e avaliação de parâmetros de qualidade da água, análise da eficiência de sistemas de biofiltragem e resolução de balanço de massa por meio de sistemas lineares.
 
-Tratamento de Erros: Validacoes para divisao por zero e valores fora do escopo aceitavel.
+O projeto foi desenvolvido para aplicar conceitos de programação, testes automatizados e conhecimentos relacionados à qualidade da água.
 
-3. Testes Unitarios e Cobertura
-A aplicacao conta com uma suite de testes automaticos desenvolvida com PHPUnit, cobrindo cenarios com dados estaticos e dinamicos via Data Providers.
+## 2. Funcionalidades Implementadas
 
-Total de Testes: 36 testes executados com sucesso.
+**Análise de Amostras:** validação dos parâmetros de pH, turbidez e cloro residual, com classificação da qualidade da água.
 
-Total de Assertions: 127 verificacoes de estado e retorno.
+**Modelagem de Biofiltro:** cálculo da eficiência de remoção de contaminantes e da taxa de filtração.
 
-Cobertura de Codigo: 100% de cobertura nas classes principais do dominio.
+**Resolução de Sistemas Lineares:** resolução de matrizes para cálculo de concentração final e dosagem em múltiplos tanques.
 
-4. Conclusao
-O projeto atende a todos os requisitos funcionais e nao-funcionais estabelecidos, garantindo estabilidade do codigo atraves de integracao de testes unitarios e interface web integrada ao Laravel Herd.
+**Tratamento de Erros:** validações para divisão por zero e valores fora do escopo aceitável.
+
+## 3. Dataset Utilizado
+
+O projeto possui um conjunto de dados simulado localizado na pasta `docs`:
+
+`docs/dataset_simulado_qualidade_agua.xlsx`
+
+A planilha contém 20 amostras com valores de pH, turbidez, cloro residual e temperatura, apresentando dados antes e depois do processo de filtragem.
+
+Os dados são **simulados** e foram utilizados para desenvolvimento, testes e demonstração das funcionalidades da aplicação. Eles não representam uma coleta real realizada pela equipe.
+
+## 4. Testes Unitários e Cobertura
+
+A aplicação conta com uma suíte de testes automáticos desenvolvida com PHPUnit, cobrindo diferentes cenários por meio de testes estáticos e dinâmicos com Data Providers.
+
+* **Total de testes:** 36 testes executados com sucesso.
+* **Total de assertions:** 127 verificações de estado e retorno.
+* **Cobertura de código:** 100% de cobertura nas principais classes do domínio.
+
+Os testes verificam situações normais, valores limites, valores fora dos padrões esperados, tratamento de erros, eficiência do biofiltro e resolução de sistemas lineares.
+
+## 5. Execução do Projeto
+
+Para executar o projeto, é necessário ter PHP, Composer, Laravel Herd e PHPUnit instalados.
+
+Após clonar o repositório, execute:
+
+```bash
+composer install
+```
+
+O projeto pode ser executado utilizando o Laravel Herd.
+
+## 6. Conclusão
+
+O projeto reúne uma aplicação web em PHP, testes automatizados e uma interface para análise dos parâmetros de qualidade da água. O uso do dataset simulado possibilita testar as funcionalidades de classificação, filtragem e cálculos implementados no sistema.
